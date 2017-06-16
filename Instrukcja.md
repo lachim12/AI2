@@ -1,4 +1,4 @@
-﻿Instalacja Python --> python-3.4.3.amd64.msi \n
+﻿Instalacja Python --> python-3.4.3.amd64.msi
 Podczas instalacji zaznaczyć wszystkie opcje (jedna jest odznaczona, trzeba ja zaznaczyć)
 potem w CMD wpisujemy: 	pip install django==1.9
 			easy_install Pillow
