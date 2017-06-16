@@ -1,6 +1,6 @@
-﻿Instalacja Python --> python-3.4.3.amd64.msi
-Podczas instalacji zaznaczyć wszystkie opcje (jedna jest odznaczona, coś z environment variables)
-potem w CMD: 	pip install django==1.9
+﻿Instalacja Python --> python-3.4.3.amd64.msi 
+ Podczas instalacji zaznaczyć wszystkie opcje (jedna jest odznaczona, trzeba ja zaznaczyć)
+ Pozniej w CMD wpisujemy: 	pip install django==1.9
 				easy_install Pillow
 w cmd wchodzisz do BLOG, tam gdzie jest manage.py i wpisujesz:
 				python manage.py makemigrations
