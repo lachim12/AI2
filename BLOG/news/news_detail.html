@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+<!-- <h1>Mój Blog</h1>
+<h2>{{ news.title }}</h2>
+{{ news.text|safe|linebreaks }}
+<b>Dodane:</b> {{ news.posted_date|date:"Y.m.d H:i" }}
+ -->
+
+
+{% block content %}
+{% include "news/parts/news_detail.html" %}
+{% endblock %}

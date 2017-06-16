@@ -1,0 +1,66 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+<head>
+    <title>{% block title %}Mój Blog{% endblock %}</title>
+    <link rel="stylesheet" href="{{ STATIC_URL }}default.css" type="text/css" />
+</head>
+<body>
+
+
+
+
+
+
+
+<div id="outer">
+
+
+	<div id="outer2">
+	
+		
+
+
+		<div id="header">
+			<h1>Mój Pierwszy Blog</h1>
+			<h2>by Michał Fortuna</h2>
+		</div>
+	
+		
+
+		<div id="menu">
+			<ul>
+				<li><a href="/">Start</a></li>
+				<li><a href="/kontakt">Kontakt</a></li>
+				<li><a href="/admin">Logowanie Admina</a></li>
+			</ul>
+		</div>
+
+		
+		<div id="content">
+	
+			<div id="column1">
+				
+
+				{% block content %}
+				{% endblock %}
+
+			</div>
+
+		</div>
+		
+		<div id="footer">
+			<p>Copyright &copy; 2017 Untitled. Design by <a href="" target="blank" rel="nofollow">Michał Fortuna</a>.</p>
+		</div>
+		
+	</div>
+
+
+</div>
+
+
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+{% block content %}
+{% include "news/parts/news_list.html" %}
+
+{% if is_paginated %}
+    <hr>
+    {% if page_obj.has_next %}
+        <a href="{% url "news-list" page_obj.next_page_number %}">starsze</a>
+    {% endif %}
+    {% if page_obj.has_previous %}
+        <a href="{% url "news-list" page_obj.previous_page_number %}">nowsze</a>
+    {% endif %}
+{% endif %}
+{% endblock %}

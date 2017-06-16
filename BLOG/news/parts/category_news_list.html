@@ -1,0 +1,16 @@
+<h1>Mój Blog - wpisy z kategorii {{ category.name }}</h1><br />
+{% for entry in news_list %}
+    <h1><a href="{% url "news-detail" entry.slug %}" style="color:black">{{ entry.title }}</a></h1>
+    {{ entry.text|safe|linebreaks }}
+    <b>Dodane:</b> {{ entry.posted_date|date:"Y.m.d H:i" }}
+    <!-- link do widoku 1 wiadomosci -->
+    <a href="{% url "news-detail" entry.slug %}">Rozwiń...</a><br />
+    <!-- koniec kodu do widoku 1 wiadomosci -->
+    <!-- do kategorii -->
+    <b>Kategorie: </b>
+    {% for category in entry.categories.all %}
+        <a href="{% url "category-news-list" category.slug %}">{{ category.name }}</a>{% if not forloop.last %}, {% endif %}
+    {% endfor %}
+    <!-- koniec kodu do kategorii -->
+    <br /><br />
+{% endfor  %}
